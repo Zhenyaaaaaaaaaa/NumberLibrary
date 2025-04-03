@@ -1,35 +1,33 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
-name: .NET Framework CI
+name: .NET Tests
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
+      - develop
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
+      - develop
 
 jobs:
-  build:
+  build-and-test:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
-    - name: Setup MSBuild Path
-      uses: microsoft/setup-msbuild@v2
-
-    - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
       with:
-        nuget-version: '5.x'  # Или более поздняя версия, если необходимо
+        dotnet-version: '9.0.202' 
 
-    - name: Restore NuGet packages
-      run: nuget restore NumberLibrary.sln
+    - name: Restore dependencies
+      run: dotnet restore
 
-    - name: Build
-      run: MSBuild NumberLibrary.sln /p:Configuration=Release
+    - name: Build solution
+      run: dotnet build --no-restore
 
-    - name: Test
-      run: VSTest.Console.exe NumberLibraryTests\bin\Release\NumberLibraryTests.dll /Framework:.NETFramework,Version=v4.7.2 #Добавляем параметр /Framework:
-
+    - name: Run tests
+      run: dotnet test --no-build --verbosity normal

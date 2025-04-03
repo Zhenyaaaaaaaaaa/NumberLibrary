@@ -32,3 +32,4 @@ jobs:
 
     - name: Test
       run: VSTest.Console.exe NumberLibraryTests\bin\Release\NumberLibraryTests.dll /Framework:.NETFramework,Version=v4.7.2 #Добавляем параметр /Framework:
+

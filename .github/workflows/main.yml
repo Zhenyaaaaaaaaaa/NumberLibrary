@@ -1,0 +1,25 @@
+    name: .NET CI
+
+    on:
+      push:
+        branches: [ main ]  # Запускать при push в ветку main
+      pull_request:
+        branches: [ main ]  # Запускать при создании pull request в ветку main
+
+    jobs:
+      build:  # Имя задачи
+
+        runs-on: ubuntu-latest  # Запускать на Ubuntu
+
+        steps:
+        - uses: actions/checkout@v3 # Используем action для checkout кода (v3 - последняя версия)
+        - name: Setup .NET  # Устанавливаем .NET SDK
+          uses: actions/setup-dotnet@v3  # Используем action для установки .NET (v3 - последняя версия)
+          with:
+            dotnet-version: '6.0.x'  # Укажите нужную версию .NET SDK (или 7.0, или 8.0)
+        - name: Restore dependencies  # Восстанавливаем зависимости NuGet
+          run: dotnet restore
+        - name: Build  # Собираем проект
+          run: dotnet build --configuration Release
+        - name: Test # Запускаем тесты
+          run: dotnet test --configuration Release

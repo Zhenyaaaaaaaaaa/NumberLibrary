@@ -27,3 +27,5 @@ public class NumberOperations
         return number % 2 != 0;
     }
 }
+
+

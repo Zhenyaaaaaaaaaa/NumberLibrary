@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Zhenya\\source\\repos\\NumberLibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{85E4EC45-326A-4F82-A491-CBAE912E9773}|NumberLibrary\\NumberLibrary.csproj|C:\\Users\\Zhenya\\source\\repos\\NumberLibrary\\numberlibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E4EC45-326A-4F82-A491-CBAE912E9773}|NumberLibrary\\NumberLibrary.csproj|solutionrelative:numberlibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85E4EC45-326A-4F82-A491-CBAE912E9773}|NumberLibrary\\NumberLibrary.csproj|c:\\users\\zhenya\\source\\repos\\numberlibrary\\numberlibrary\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{85E4EC45-326A-4F82-A491-CBAE912E9773}|NumberLibrary\\NumberLibrary.csproj|solutionrelative:numberlibrary\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48E4F97B-04F9-40AC-A043-303416BFFAA9}|NumberLibrary.Tests\\NumberLibrary.Tests.csproj|c:\\users\\zhenya\\source\\repos\\numberlibrary\\numberlibrary.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E4F97B-04F9-40AC-A043-303416BFFAA9}|NumberLibrary.Tests\\NumberLibrary.Tests.csproj|solutionrelative:numberlibrary.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E4EC45-326A-4F82-A491-CBAE912E9773}|NumberLibrary\\NumberLibrary.csproj|C:\\Users\\Zhenya\\source\\repos\\NumberLibrary\\numberlibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E4EC45-326A-4F82-A491-CBAE912E9773}|NumberLibrary\\NumberLibrary.csproj|solutionrelative:numberlibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,24 +32,35 @@
               "RelativeDocumentMoniker": "NumberLibrary.Tests\\UnitTest1.cs",
               "ToolTip": "C:\\Users\\Zhenya\\source\\repos\\NumberLibrary\\NumberLibrary.Tests\\UnitTest1.cs",
               "RelativeToolTip": "NumberLibrary.Tests\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCYAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T19:36:09.434Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\Zhenya\\source\\repos\\NumberLibrary\\NumberLibrary\\packages.config",
+              "RelativeDocumentMoniker": "NumberLibrary\\packages.config",
+              "ToolTip": "C:\\Users\\Zhenya\\source\\repos\\NumberLibrary\\NumberLibrary\\packages.config",
+              "RelativeToolTip": "NumberLibrary\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-03T10:09:48.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\Zhenya\\source\\repos\\NumberLibrary\\NumberLibrary\\Class1.cs",
               "RelativeDocumentMoniker": "NumberLibrary\\Class1.cs",
               "ToolTip": "C:\\Users\\Zhenya\\source\\repos\\NumberLibrary\\NumberLibrary\\Class1.cs",
               "RelativeToolTip": "NumberLibrary\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T19:33:44.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-02T19:33:44.91Z"
             }
           ]
         }

@@ -1,13 +1,22 @@
-﻿
+
 using System;
+using Xunit;
 
 public class NumberOperations
 {
     // Метод для округления вещественного числа
     public double Round(double number)
     {
-        return Math.Round(number);
+        if (double.IsNaN(number)) 
+        {
+            throw new ArgumentException("Значение не может быть NaN."); 
+        }
+        else
+        {
+            return Math.Round(number);
+        }
     }
+
 
     // Метод для взятия модуля числа
     public double Absolute(double number)
@@ -27,5 +36,6 @@ public class NumberOperations
         return number % 2 != 0;
     }
 }
+
 
 

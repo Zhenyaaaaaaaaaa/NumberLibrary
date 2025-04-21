@@ -26,8 +26,8 @@ jobs:
       
     - name: Build
       run: dotnet build --configuration Release --no-restore
-      working-directory: NumberLibrary
+      working-directory: NumberLibrary, NumberLibrary.Tests
       
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-      working-directory: NumberLibrary
+      working-directory: NumberLibrary.Tests

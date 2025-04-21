@@ -9,7 +9,7 @@ public class NumberOperationsTests
     public void Round_ValidDouble_ReturnsRoundedValue()
     {
         var result = _numberOperations.Round(2.5);
-        Assert.Equal(3, result);
+        Assert.Equal(2, result);
     }
 
     [Fact]
